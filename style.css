@@ -15,8 +15,22 @@
       width: 100%;
       height: 100%;
   }
-  
-  .nav{
+  .whatssppbanner{
+    position: fixed;
+    top: 80%;
+    right: 0%;
+    height: 5vw;
+    width: 5vw;
+    background-color: white;
+    z-index: 1;
+    border-radius: 50%;
+
+  }
+  .whatssppbanner img{
+    height:5vw;
+    width:5vw;
+  }
+ .nav{
       position:fixed;
       background-color: #ffff;
       z-index:100;
@@ -234,7 +248,7 @@ h1 {
      /* height: 100%; */
      width: 100%;
      background-color: #f2f2fe;
-     padding: 3vw 3vw;
+     padding: 2vw 3vw;
      text-align: center;
      display: flex;
      flex-direction: column;
@@ -305,7 +319,7 @@ display:none;
 }
 .keypointbanner{
   width: 100%;
-  height: 250px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
