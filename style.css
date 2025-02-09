@@ -11,14 +11,28 @@
   height: 100%;
   width: 100%;
   }
+  body::-webkit-scrollbar{
+    width: 0;
+}
+  @keyframes appear {
+    from{
+    opacity: 0;
+    scale: 0.5;
+
+    }
+    to {
+    opacity: 1;
+    scale: 1;
+    }}
+    
   .main {
       width: 100%;
       height: 100%;
   }
-  .whatssppbanner{
+  .whatsappbanner{
     position: fixed;
     top: 80%;
-    right: 0%;
+    right: 2%;
     height: 5vw;
     width: 5vw;
     background-color: white;
@@ -26,9 +40,12 @@
     border-radius: 50%;
 
   }
-  .whatssppbanner img{
+  .whatsappbanner img{
     height:5vw;
     width:5vw;
+  }
+  .whatsappbanner img:hover{
+    transform: scale(1.06);
   }
  .nav{
       position:fixed;
@@ -231,6 +248,9 @@ h1 {
     font-size: 1.6vw;
     line-height: 3vw;
     text-align: left;
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
    
 }
 #Founder{
@@ -319,10 +339,20 @@ display:none;
 }
 .keypointbanner{
   width: 100%;
-  height: 150px;
+  height: 250px;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  
+ }
+ .achhead{
+  position: absolute;
+  top: 1%;
+ }
+ .achhead h1{
+     font-size: 3vw;
+     text-transform: uppercase;
  }
  .backgroundimg{
    height: 150px;
@@ -339,7 +369,7 @@ display:none;
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 0 1vw;
+   padding: 0vw 4vw;
  }
  .innbox{
      width: 30%;
@@ -987,6 +1017,14 @@ background-color: #36BAAD;
  /* * p{
   color:#000;
  } */
+ .whatsappbanner{
+  height: 12vw;
+  width: 12vw;
+}
+.whatsappbanner img{
+  height:12vw;
+  width:12vw;
+}
   .nav{
   height: 60px;
  }
@@ -1165,11 +1203,7 @@ letter-spacing:1px;
 .boxes{
   display: flex;
   flex-direction: column;
-  /* display: grid;
-  grid-template-columns: repeat(2,35vw);
-  grid-gap:15vw;
-  width: 100%;
-  padding: 5vw 7vw; */
+  
 }
 .boxes .hidden *{
   display:none;
@@ -1194,6 +1228,7 @@ letter-spacing:1px;
   font-size: 3.5vw;
 }
 .obox p {
+  margin: 3vw 0;
   display:initial;
   font-size: 3.5vw;
   color:#000;
@@ -1296,20 +1331,21 @@ letter-spacing:1px;
   margin-top: 3vw;
   letter-spacing:1px;
   line-height: 5vw;
-  text-align: justify;
+  text-align:center;
   color:#000;
   
 }
-#mobileview {
-  font-size: 3vw;
-  display: initial;
+.projectbox  button {
+  padding: 1rem 1rem;
+  width: 25vw;
+  height: 10vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem;
 }
-.projectbox a {
-  text-decoration: none;
-  margin-top: 1vw;
-  color:black;
-  font-size:3vw;
-  margin-top: 2vw;
+.projectbox  button i{
+  color: #fff;
 }
 
 /* testimonials seection */
@@ -1327,7 +1363,7 @@ letter-spacing:1px;
   width:100%;
   background-position: top;
   background-size: 140%;
-  background-color: grey;
+  background-color: #fff;
 }
 .lftcenter{
    

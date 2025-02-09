@@ -14,6 +14,9 @@
     </head>
 <body>
     <div class="main">
+        <section class="whatsappbanner">
+            <a href="https://wa.me/+919135363747" target="_blank"> <img src="assets/pngegg.png" alt="whatspp" ></a>
+        </section>
         <section class="nav">
             <a href="index.html"> <img src="assets/logo.png" alt="logo"></a>
             <div id="navmd">
@@ -270,6 +273,9 @@ rightArrows.forEach((rightArrow, index) => {
 
 </script>
 <style>
+    .main{
+        overflow-x: hidden;
+    }
     .mainimg{
         padding-top: 90px;
     }
@@ -279,7 +285,7 @@ rightArrows.forEach((rightArrow, index) => {
     }
     .projectGallery{
         align-items: center;
-        padding: 2vw 2vw;
+        padding: 2vw 0;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -288,6 +294,10 @@ rightArrows.forEach((rightArrow, index) => {
     }
     .projectGallery h1{
         font-size: 3vw;
+    }
+    .projectGallery h3{
+        font-size: 3vw;
+        /* color:#36BAAD; */
     }
     .allbox{
        padding: 2vw 2vw;
@@ -310,11 +320,11 @@ rightArrows.forEach((rightArrow, index) => {
     #leftarrowcir{
         position: absolute;
         height: 5vw;
-        width: 3vw;
+        width: 2vw;
         background-color: #d1ceff4c;
         
         top: 48%;
-        left: -2%;
+        left: 0%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -332,11 +342,11 @@ rightArrows.forEach((rightArrow, index) => {
     #rightarrowcir{
         position: absolute;
         height: 5vw;
-        width: 3vw;
+        width: 2vw;
         background-color: #d1ceff4c;
         
         top: 48%;
-        right: -2%;
+        right: 0%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -346,8 +356,8 @@ rightArrows.forEach((rightArrow, index) => {
     }
 
     .completedPSlide{
-        /* background-color: #dadada; */
-        
+        background-color: #dadada;
+        width: 98%;
     }
     .innerbox{
         width: 20vw;

@@ -17,6 +17,9 @@
 </head>
 <body>
     <div class="main">
+        <section class="whatsappbanner">
+            <a href="https://wa.me/+919135363747" target="_blank"> <img src="assets/pngegg.png" alt="whatspp"></a>
+        </section>
         <section class="nav">
             <a href="index.html"> <img src="assets/logo.png" alt="logo"></a>
             <div id="navmd">
@@ -79,19 +82,32 @@
                    </div>
             </section>
             <section class="paragraphes">
-                <p>Back in 2022. No-no, back into 2020, I had little knowledge of the services we provide now, despite my background in
-                    civil engineering. For the time pass during COVID-19 pandemic, I joined Rama & Sons Construction company, where I worked
-                    on-site for a project [ITI Building] in my area. This hands-on experience, multiplied with my growing expertise in BIM and 3D
-                    software, opened new opportunities for me.</p>
-                <p>By 2022, friends and relatives began seeking my help to plan and design their homes for free. This led me to slowly gain
-                    more experience, and in 2023, I took the exciting step to expand our offerings. We began providing services in house planning,
-                    3D designing, cost estimates for bank loans, and construction consultancy with the name RS+ ArchetiQ as design studio.</p>
-                <p>However, this journey hasn't been easy. I realized, while my designs were perfect, contractors often failed to bring them
-                    to execution. This is a turn off, left clients unsatisfied with the final results, which was a huge disappointment for me.</p>
-                <p>I believe in giving my clients the home of their dreams, and this is why I have decided to take full control over the
-                    construction process. Moving forward, we will be offering complete construction services with the new name ArchetiQ
-                    Construction. This means that all your projects will be managed, built, and supervise directly by our team, ensuring that every
-                    aspect is handled with care and precision.</p>
+                <h4>Your trusted construction partner for turning your dreams into homes!</h4>
+                <p>We know what it takes to create a home or building that's more than just walls and a roof. It's
+                    about crafting spaces that reflect who you are and what you value. Whether it's a cozy home for
+                    your family or a small commercial project, we're here to make it happen..</p>
+                    <h3>Who are we?</h3>
+                <p>Based in Muzaffarpur, ArchetiQ Construction specializes in building residential properties and
+                    offering a wide range of construction services. From designing and planning to delivering
+                    detailed construction documents, we handle every step with care and precision. Our focus is on
+                    quality, durability, and style — all tailored to meet your unique needs..</p>
+                    <h3>What Makes Us Different?</h3>
+                <p>At ArchetiQ Construction, we don't just build structures; we create experiences. Here's why we
+                    stand out:</p>
+                   <div class="wmud">
+                    <p><span><i class="ri-circle-fill"></i>Customized Designs:</span>Your vision is our blueprint. We make sure every design reflects your style and needs.</p>
+                    <p><span><i class="ri-circle-fill"></i>Attention to Detail:</span> We provide construction plans and schedules that leave no room for guesswork.</p>
+                    <p><span><i class="ri-circle-fill"></i>Expert-Team:</span> Team of skilled engineers and creative designers ensure your project is in the best hands.</p>
+ 
+                     <p><span><i class="ri-circle-fill"></i>Affordable-Quality:</span>High-quality work doesn't have to break the bank. We believe in fair pricing for exceptional results.</p>
+                   </div>
+                     <h3>Our Story</h3> 
+                     <p>ArchetiQ Construction started with a simple idea: to make professional and reliable construction services accessible to everyone. Over the years, we've grown into a trusted name in the industry by staying true to our values of integrity, transparency, and customer satisfaction.</p> 
+                    <p>Our team is passionate about building not just homes but lasting relationships with our clients. We believe that every project, big or small, deserves the same dedication and effort.</p> 
+                    <h3>Why Choose Us?</h3>
+                    <p>We're not just another construction company; we're a team that genuinely cares about making your project stress-free and successful. Our clients trust us because we deliver what we promise — quality, on time, and within budget.</p>
+                    <p>At ArchetiQ Construction, your satisfaction is our top priority. Let's work together to build extraordinary.</p>
+                    
 
             </section>
             <section class="projectdetails">
@@ -134,9 +150,6 @@
                 <div id="outroright">
                     <h6>Our Mission</h6>
                     <h1>Live Better And Beautiful</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, ducimus Lorem ipsum dolor sit amet.
-
-                    </p>
                     <a href="join.html"><button>Join Our Team</button></a>
                 </div>
 
@@ -269,9 +282,17 @@
     }
     .paragraphes p{
         color: #000;
-        text-indent: 5vw;
+        text-indent: 4.5vw;
         text-align: justify;
         letter-spacing: .7px;
+        font-weight: 400;
+        animation: appear linear;
+       animation-timeline: view();
+       animation-range: entry 0% cover 40%;
+    }
+    .paragraphes h3 , .paragraphes h4{
+        text-align: left;
+        margin-top: 5vw;
     }
     .projectdetails{
         padding: 2vw 4vw;
@@ -280,6 +301,17 @@
         gap: 2vw;
         background-color: #f2f2fe;
     }
+    .paragraphes span{
+            font-size: 1;
+            font-weight: 600;
+        }
+     .wmud {
+       padding: 0vw 5vw;
+     }
+     .wmud p{
+        text-indent: 0;
+        margin-bottom: 2vw;
+     }
     #image img{
         width: 100%;
         height: 15vw;
@@ -308,6 +340,7 @@
     }
     .detailbox h5{
        margin-top: -1.5vw;
+       font-size:0.7rem ;
     }
     .outro{
         padding: 3vw 4vw;
@@ -421,8 +454,14 @@
    }
    .aboutright{
         width: 90%;
+      
         
-        
+    }
+    .paragraphes h3 {
+        font-size: 5vw;
+    }
+    .paragraphes h4 {
+        font-size: 4.5vw;
     }
     #mainbox{
         width: 100%;
