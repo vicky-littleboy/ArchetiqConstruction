@@ -348,7 +348,7 @@ display:none;
  }
  .achhead{
   position: absolute;
-  top: 1%;
+  top: 0%;
  }
  .achhead h1{
      font-size: 3vw;
@@ -471,21 +471,7 @@ display:none;
 
 }
 
-/* #op{
-  background-image: url(ongoing1.png);
-  background-position: center;
-  background-size: cover;
-}
-#cp{
-  background-image: url(completed1.png);
-  background-position: center;
-  background-size: cover;
-}
-#up{
-  background-image: url(upcoming1.png);
-  background-position: center;
-   background-size: cover; 
-} */
+
 .projectbox h3{
   font-size:1.65vw;
   margin-top:1.8vw;
@@ -1188,6 +1174,9 @@ letter-spacing:1px;
   text-align: left;
   font-weight: 800;
 }
+#founder p{
+  font-weight: 400;
+}
 #foundimg{
   width: 35vw;
   height:19vw;
@@ -1232,6 +1221,7 @@ letter-spacing:1px;
   display:initial;
   font-size: 3.5vw;
   color:#000;
+  text-align center;
 }
 .bimg {
   height: 25vw;
