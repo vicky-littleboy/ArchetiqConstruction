@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F6VV7L6TET"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-F6VV7L6TET');
+</script>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link
@@ -66,7 +75,7 @@
                 <img src="assets/Our Project2.webp" alt="">
             </section>
             <section class="projectGallery">
-                <h1>OUR PROJEC<SPAn id="deco">T</SPAn> GALLERY</h1>
+                <!-- <h1>OUR PROJEC<SPAn id="deco">T</SPAn> GALLERY</h1> -->
                 <div class="allbox completedPSlide" id="completedgprojectslide">
                     <div id="leftarrowcir"><i class="ri-arrow-left-s-line"></i></div>
                     <div id="rightarrowcir"><i class="ri-arrow-right-s-line"></i></div>
@@ -78,22 +87,22 @@
                     <div class="innerbox">
                         <img src="assets/completed1.png" alt="">
                         <h4>Project Name</h4>
-                        <a href="AqC_projects/completed/cp1.html"><button>See Details<i class="ri-arrow-right-line"></i></button></a>
+                        <a href="AqC_projects/codes/cp1.html"><button>See Details<i class="ri-arrow-right-line"></i></button></a>
                     </div>
                     <div class="innerbox">
                         <img src="assets/completed1.png" alt="">
                         <h4>Project Name</h4>
-                        <a href="#"><button>See Details<i class="ri-arrow-right-line"></i></button></a>
+                        <a href="AqC_projects/codes/cp1.html"><button>See Details<i class="ri-arrow-right-line"></i></button></a>
                     </div>
                     <div class="innerbox">
                         <img src="assets/completed1.png" alt="">
                         <h4>Project Name</h4>
-                        <a href="#"><button>See Details<i class="ri-arrow-right-line"></i></button></a>
+                        <a href="AqC_projects/codes/cp1.html"><button>See Details<i class="ri-arrow-right-line"></i></button></a>
                     </div>
                     <div class="innerbox">
                         <img src="assets/completed1.png" alt="">
                         <h4>Project Name</h4>
-                        <a href="#"><button>See Details<i class="ri-arrow-right-line"></i></button></a>
+                        <a href="AqC_projects/codes/cp1.html#prj1"><button>See Details<i class="ri-arrow-right-line"></i></button></a>
                     </div>
                     <div class="innerbox">
                         <img src="assets/completed1.png" alt="">
@@ -297,7 +306,7 @@ rightArrows.forEach((rightArrow, index) => {
     }
     .projectGallery h3{
         font-size: 3vw;
-        /* color:#36BAAD; */
+        color:#000080;
     }
     .allbox{
        padding: 2vw 2vw;
@@ -334,10 +343,7 @@ rightArrows.forEach((rightArrow, index) => {
     #leftarrowcir:hover,#rightarrowcir:hover{
         background-color: #d1ceff;
     }
-    #leftarrowcir i,#rightarrowcir i{
-        
-        
-    }
+    
 
     #rightarrowcir{
         position: absolute;
@@ -355,7 +361,7 @@ rightArrows.forEach((rightArrow, index) => {
 
     }
 
-    .completedPSlide{
+    .completedPSlide,.ongoingPSlide,.upcomingPSlide{
         background-color: #dadada;
         width: 98%;
     }
@@ -390,11 +396,7 @@ rightArrows.forEach((rightArrow, index) => {
         width: 20vw;
         border-radius: 8px;
     }
-    .ongoingPSlide{
-        
-    }
-    .upcomingPSlide{
-    }
+   
 
     @media (max-width: 768px) {
     /* Adjust the main image */
@@ -411,13 +413,20 @@ rightArrows.forEach((rightArrow, index) => {
         font-size: 6vw; 
     }
     .projectGallery  {
+        background-color: #dadada;
+
     }
 
     .allbox {
-        padding: 1vw;
+        padding: 4vw;
         width: 100%; 
     }
+    .projectGallery h3{
+        font-size: 6vw;
+        text-align:center;
+       text-shadow:aliceblue;
 
+    }
    
     .scrollslide {
         display: flex; 
@@ -426,6 +435,7 @@ rightArrows.forEach((rightArrow, index) => {
         scroll-snap-type: x mandatory; 
         gap: 10px;
     }
+
 
     #leftarrowcir{
        
@@ -452,6 +462,10 @@ rightArrows.forEach((rightArrow, index) => {
         
         font-size: 8vw;
     }
+    .completedPSlide ,.ongoingPSlide ,.upcomingPSlide{
+        background-color: #fff;
+       
+    }
     .innerbox {
         flex: 0 0 100%; 
         width: 60vw; 
@@ -461,10 +475,12 @@ rightArrows.forEach((rightArrow, index) => {
         scroll-snap-align: start; 
         padding-bottom: 3vw;
         box-shadow: none;
+        padding: 2vw 0;
+       
     }
 
     .innerbox img {
-        width: 70vw; 
+        width: 60vw; 
         height: auto;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
     }
@@ -484,8 +500,8 @@ rightArrows.forEach((rightArrow, index) => {
         color: #fff;
         margin-left: 1vw;
     }
-    .footer{
-        margin-top: -5vw;
+    footer{
+        margin-top:0vw;
     }
 }
 </style>
